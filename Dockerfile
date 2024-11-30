@@ -8,7 +8,6 @@ COPY ./templates /app/templates/
 COPY requirements.txt /app/
 WORKDIR /app
 RUN pip install -r requirements.txt
-COPY app.py dbconnect.py /app/
 COPY dbconnect.py /app/dbconnect.py
 RUN chmod -x /app/app.py
 ENTRYPOINT ["python","app.py"]
