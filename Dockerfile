@@ -9,4 +9,5 @@ COPY requirements.txt /app/
 WORKDIR /app
 RUN pip install -r requirements.txt
 COPY app.py dbconnect.py /app/
+RUN chmod -x /app/app.py
 ENTRYPOINT ["python","app.py"]
