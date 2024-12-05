@@ -1,8 +1,8 @@
 # tripmeal-cloud
 Sample application: used to show an example of deployment on Kubernetes
-repo name = lmn
-app name = cloudapp
+repo name = repofinal
+app name = appfinal
 app version = latest
-cluster name = group
-net name = exo
-image name = pets
+cluster name = cluster final
+net name = net final
+image name = imagefinal
