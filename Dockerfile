@@ -1,4 +1,4 @@
-FROM python:3.7-slim
+FROM python:3.11-slim
 RUN mkdir -p /app & \
     mkdir -p /app/templates & \
     mkdir -p /app/static
