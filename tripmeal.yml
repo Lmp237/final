@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: europe-central2-docker.pkg.dev/gq-cloud-computing/finalrepo/finalapp-finalimage/web:latest
+      - image: europe-west8-docker.pkg.dev/gq-cloud-computing/repon/pan-food:latest
         name: web
         ports:
         - containerPort: 5000
@@ -80,7 +80,7 @@ spec:
         service: db
     spec:
       containers:
-      - image: europe-central2-docker.pkg.dev/gq-cloud-computing/finalrepo/finalapp-finalimage/db:latest
+      - image: europe-west8-docker.pkg.dev/gq-cloud-computing/repon/pan-pets:latest
         name: db
         ports:
         - containerPort: 3306
