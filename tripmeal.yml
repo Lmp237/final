@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: europe-central2-docker.pkg.dev/gq-cloud-computing/repofinal/appfinal-imagefinal/web:latest
+      - image: europe-west2-docker.pkg.dev/gq-cloud-computing/rfinal/app-photo/web
         name: web
         ports:
         - containerPort: 5000
@@ -80,7 +80,7 @@ spec:
         service: db
     spec:
       containers:
-      - image: europe-central2-docker.pkg.dev/gq-cloud-computing/repofinal/appfinal-imagefinal/db:latest
+      - image: europe-west2-docker.pkg.dev/gq-cloud-computing/rfinal/app-photo/db
         name: db
         ports:
         - containerPort: 3306
@@ -102,9 +102,12 @@ spec:
       - ReadWriteOnce
       resources:
         requests:
+<<<<<<< HEAD
          memory: "128Mi"
          cpu: "250m"
         limits:
          memory: "256Mi"
          cpu: "500m"
+=======
+>>>>>>> 749b45e444876fd343faa62b05b32be31fe244ea
           storage: 100Mi

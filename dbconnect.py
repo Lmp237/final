@@ -1,4 +1,3 @@
-import sys
 import pymysql
 try:
     import urlparse
