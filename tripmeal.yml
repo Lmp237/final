@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: europe-west8-docker.pkg.dev/gq-cloud-computing/repon/pan-food:latest
+      - image: europe-west8-docker.pkg.dev/gq-cloud-computing/repon/pan-pets:latest
         name: web
         ports:
         - containerPort: 5000
