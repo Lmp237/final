@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: lucilemp/web
+      - image: europe-west2-docker.pkg.dev/gq-cloud-computing/rfinal/app-photo/web
         name: web
         ports:
         - containerPort: 5000
@@ -80,7 +80,7 @@ spec:
         service: db
     spec:
       containers:
-      - image: lucilemp/db
+      - image: europe-west2-docker.pkg.dev/gq-cloud-computing/rfinal/app-photo/db
         name: db
         ports:
         - containerPort: 3306
