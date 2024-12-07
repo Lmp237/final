@@ -38,3 +38,8 @@ ENTRYPOINT ["python","app.py"]
 
 
 
+=======
+COPY app.py dbconnect.py /app/
+RUN chmod +x /app/app.py
+CMD ["python","app.py"]
+>>>>>>> 98fbdd68a77c1407fd4ff10e3beef893f5d4ab70

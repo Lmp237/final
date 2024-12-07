@@ -103,6 +103,7 @@ spec:
       resources:
         requests:
 <<<<<<< HEAD
+<<<<<<< HEAD
          memory: "128Mi"
          cpu: "250m"
         limits:
@@ -110,4 +111,6 @@ spec:
          cpu: "500m"
 =======
 >>>>>>> 749b45e444876fd343faa62b05b32be31fe244ea
+=======
+>>>>>>> 98fbdd68a77c1407fd4ff10e3beef893f5d4ab70
           storage: 100Mi
