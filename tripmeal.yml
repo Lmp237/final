@@ -36,19 +36,19 @@ spec:
           protocol: TCP
         env:
         - name: DATABASE_NAME
-          value: "tripmealdb"
+          value: 'tripmealdb'
         - name: DATABASE_USER
-          value: "root"
+          value: 'root'
         - name: MYSQL_ROOT_PASSWORD
-          value: "my-secret-pw"
+          value: 'my-secret-pw'
         - name: DATABASE_HOST
-          value: "db"
+          value: 'db'
         - name: DATABASE_PORT
-          value: "3306"
+          value: '3306'
         - name: TRIPMEAL_KEY
-          value: "my-secret-key"
+          value: 'my-secret-key'
         - name: SERVER_PORT
-          value: "5000"
+          value: '5000'
 ---
 apiVersion: v1
 kind: Service
@@ -88,10 +88,16 @@ spec:
         - mountPath: /var/lib/mysql
           name: tripmeal-data
         env:
+        - name: DATABASE_PORT
+          value: '3306'
+        - name: DATABASE_HOST
+          value: 'db'
+        - name: TRIPMEAL_KEY
+          value: 'my-secret-key'
         - name: DATABASE_NAME
           value: "tripmealdb"
         - name: DATABASE_USER
-          value: "root" 
+          value: "root"
         - name: MYSQL_ROOT_PASSWORD
           value: "my-secret-pw"
   volumeClaimTemplates:
@@ -99,12 +105,7 @@ spec:
       name: tripmeal-data
     spec:
       accessModes:
-      - ReadWriteOnce:
+      - ReadWriteOnce
       resources:
         requests:
-         memory: "128Mi"
-         cpu: "250m"
-        limits:
-         memory: "256Mi"
-         cpu: "500m"
           storage: 100Mi
