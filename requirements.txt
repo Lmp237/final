@@ -4,7 +4,7 @@ Flask-WTF==0.14.2
 gunicorn==19.6.0
 itsdangerous==0.24
 Jinja2==2.10
-pymysql
+pymysql==1.0.2
 cryptography
 MarkupSafe==0.23
 passlib==1.7.1
